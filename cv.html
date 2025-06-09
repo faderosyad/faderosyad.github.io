@@ -1,0 +1,31 @@
+---
+# This tells Jekyll to use your site's default layout as a base.
+# If your default layout is named something else (e.g., 'page', 'base'),
+# change 'default' to that name.
+# If you don't have a base layout, you might need to add full HTML
+# boilerplate here (<html>, <head>, <body>, etc.).
+layout: default
+---
+
+<article class="cv-document">
+  <header class="cv-main-header">
+    {% if page.name_for_cv %}
+      <h1 class="cv-name">{{ page.name_for_cv | escape }}</h1>
+      {% comment %} Display page.title as a subtitle if it's defined and different from the name {% endcomment %}
+      {% if page.title and page.title != page.name_for_cv %}
+        <p class="cv-document-title">{{ page.title | escape }}</p>
+      {% endif %}
+    {% else %}
+      {% comment %} Fallback to page.title as H1 if name_for_cv is not provided {% endcomment %}
+      <h1>{{ page.title | default: "Curriculum Vitae" | escape }}</h1>
+    {% endif %}
+
+    {% if page.tagline_for_cv %}
+      <address class="cv-tagline">{{ page.tagline_for_cv | escape }}</address>
+    {% endif %}
+  </header>
+
+  <section class="cv-body">
+    {{ content }}
+  </section>
+</article>
