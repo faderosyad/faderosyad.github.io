@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="cv-document">
+  <header class="page-header">
+    <p class="eyebrow">Experience &amp; qualifications</p>
+    <h1>{{ page.name_for_cv | default: site.title | escape }}</h1>
+    <address class="cv-tagline">{{ page.tagline_for_cv | escape }}</address>
+  </header>
+  <section class="cv-body content-narrow">{{ content }}</section>
+</article>
