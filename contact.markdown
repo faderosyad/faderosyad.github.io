@@ -8,5 +8,4 @@ description: Contact Fade Khalifah Rosyad about platform engineering and SRE opp
 <div class="content-narrow">
   <div class="contact-card"><div><strong>Email</strong><span>The quickest way to reach me</span></div><a href="mailto:faderosyad@gmail.com">faderosyad@gmail.com ↗</a></div>
   <div class="contact-card"><div><strong>LinkedIn</strong><span>Professional profile</span></div><a href="https://www.linkedin.com/in/faderosyad" rel="me">linkedin.com/in/faderosyad ↗</a></div>
-  <div class="contact-card"><div><strong>GitHub</strong><span>Code and open source</span></div><a href="https://github.com/faderosyad" rel="me">github.com/faderosyad ↗</a></div>
 </div>

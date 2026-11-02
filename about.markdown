@@ -11,6 +11,21 @@ description: About Fade Khalifah Rosyad, a platform and reliability engineer bas
   <h2>What I care about</h2>
   <ul><li>Reliable, secure infrastructure that is understandable and maintainable.</li><li>Reducing repetitive work with useful automation.</li><li>Making cloud resources more efficient and cost-aware.</li><li>Sharing context and helping teams deliver with confidence.</li></ul>
   <h2>Beyond the role</h2>
-  <p>I studied Computer Engineering at Universitas Indonesia. I’m currently taking an intentional career break to reflect on my direction and prepare for a sustainable return to platform engineering. I’m open to relocation opportunities abroad and interested in multicultural engineering environments.</p>
+  <p>I’m currently taking an intentional career break to reflect on my direction and prepare for a sustainable return to platform engineering. I’m open to relocation opportunities abroad and interested in multicultural engineering environments.</p>
+  <h2>Education &amp; certification</h2>
+  <div class="credential-grid">
+    <article class="credential-card">
+      <p class="eyebrow">Education · 2015–2019</p>
+      <h3>Bachelor of Computer Engineering</h3>
+      <p class="credential-institution">Universitas Indonesia</p>
+      <p>Studied software development, computer networking and security, computer architecture, system architecture, and project management. GPA: 3.32 / 4.00.</p>
+    </article>
+    <article class="credential-card">
+      <p class="eyebrow">Certification · 2026–2028</p>
+      <h3>Certified Kubernetes Administrator</h3>
+      <p class="credential-institution">The Linux Foundation</p>
+      <p>Certified October 2026. Valid through October 2028.</p>
+    </article>
+  </div>
   <p><a href="{{ '/curriculum-vitae/' | relative_url }}">Read my CV →</a></p>
 </div>

@@ -2,10 +2,13 @@
 layout: default
 ---
 <article class="cv-document">
-  <header class="page-header">
-    <p class="eyebrow">Experience &amp; qualifications</p>
-    <h1>{{ page.name_for_cv | default: site.title | escape }}</h1>
-    <address class="cv-tagline">{{ page.tagline_for_cv | escape }}</address>
+  <header class="page-header cv-page-header">
+    <div>
+      <p class="eyebrow">Experience &amp; qualifications</p>
+      <h1>{{ page.name_for_cv | default: site.title | escape }}</h1>
+      <address class="cv-tagline">{{ page.tagline_for_cv | escape }}</address>
+    </div>
+    <a class="button cv-download-button" href="{{ '/assets/files/fade-khalifah-rosyad-cv.pdf' | relative_url }}">Download PDF <span aria-hidden="true">↓</span></a>
   </header>
-  <section class="cv-body content-narrow">{{ content }}</section>
+  {{ content }}
 </article>
