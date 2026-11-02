@@ -46,6 +46,7 @@ description: Platform and reliability engineering, cloud infrastructure, and thi
         <li><img src="https://devicons.io/devicons/icons/terraform.svg" alt="" aria-hidden="true" loading="lazy" onerror="this.hidden=true"><span>Terraform</span></li>
         <li><img src="https://devicons.io/devicons/icons/ansible.svg" alt="" aria-hidden="true" loading="lazy" onerror="this.hidden=true"><span>Ansible</span></li>
         <li><img src="https://devicons.io/devicons/icons/docker.svg" alt="" aria-hidden="true" loading="lazy" onerror="this.hidden=true"><span>Docker</span></li>
+        <li><img src="https://raw.githubusercontent.com/istio/istio/master/logo/istio-bluelogo-whitebackground-unframed.svg" alt="" aria-hidden="true" loading="lazy" onerror="this.hidden=true"><span>Istio</span></li>
       </ul>
     </section>
     <section class="tech-group" aria-labelledby="tech-delivery-title">
@@ -73,8 +74,9 @@ description: Platform and reliability engineering, cloud infrastructure, and thi
 <div class="home-grid">
   <section>
     <div class="section-heading"><h2>Selected work</h2><a class="text-link" href="{{ '/projects/' | relative_url }}">All projects ↗</a></div>
+    {% assign ordered_projects = site.projects | sort: "order" %}
     <ul class="project-list">
-      {% for project in site.projects limit:3 %}
+      {% for project in ordered_projects %}
       <li class="project-item">
         <h3><a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></h3>
         <p>{{ project.description | escape }}</p>
@@ -85,8 +87,7 @@ description: Platform and reliability engineering, cloud infrastructure, and thi
   </section>
   <section>
     <div class="section-heading"><h2>Recent writing</h2><a class="text-link" href="{{ '/writing/' | relative_url }}">All writing ↗</a></div>
-    {% if site.posts.size > 0 %}<ul class="post-list">
-      {% for post in site.posts limit:3 %}<li class="post-item"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>{% endfor %}
-    </ul>{% else %}<p class="empty-note">I’m making space for notes and essays. Check back soon.</p>{% endif %}
+    <p class="empty-note">I publish essays and notes on Medium.</p>
+    <p class="medium-home-links"><a class="button secondary" href="https://medium.com/@faderosyad" rel="me">Visit my Medium profile <span aria-hidden="true">↗</span></a> <a class="text-link" href="https://medium.com/feed/@faderosyad">RSS feed ↗</a></p>
   </section>
 </div>

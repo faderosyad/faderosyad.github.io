@@ -1,5 +1,6 @@
 ---
 layout: default
+order: 1
 title: Secure AWS platform for financial services
 context: Reliability engineering · CFX Group
 description: Built and operated AWS infrastructure with a focus on network isolation and dependable service delivery.

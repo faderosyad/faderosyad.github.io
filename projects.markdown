@@ -13,7 +13,8 @@ description: Selected infrastructure and reliability work by Fade Khalifah Rosya
 </section>
 
 <div class="cards">
-{% for project in site.projects %}
+{% assign ordered_projects = site.projects | sort: "order" %}
+{% for project in ordered_projects %}
 <article class="card">
   <span class="project-label">{{ project.context }}</span>
   <h2><a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></h2>

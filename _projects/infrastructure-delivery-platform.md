@@ -1,5 +1,6 @@
 ---
 layout: default
+order: 4
 title: Shared infrastructure and delivery foundations
 context: Platform engineering · ByOrange
 description: Centralized reusable infrastructure and CI/CD patterns to support consistent delivery across multiple products.

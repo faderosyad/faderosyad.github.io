@@ -1,5 +1,6 @@
 ---
 layout: default
+order: 3
 title: Cloud cost optimization on GCP
 context: Cloud operations · ByOrange
 description: Helped reduce monthly cloud costs by 40% through resource right-sizing and scheduled infrastructure lifecycle automation.
