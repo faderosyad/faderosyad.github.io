@@ -71,11 +71,11 @@ description: Platform and reliability engineering, cloud infrastructure, and thi
     </section>
   </div>
 </section>
-<div class="home-grid">
-  <section>
-    <div class="section-heading"><h2>Selected work</h2><a class="text-link" href="{{ '/projects/' | relative_url }}">All projects ↗</a></div>
+<div class="home-content-stack">
+  <section class="selected-work-section" aria-labelledby="selected-work-title">
+    <div class="section-heading"><h2 id="selected-work-title">Selected work</h2><a class="text-link" href="{{ '/projects/' | relative_url }}">All projects ↗</a></div>
     {% assign ordered_projects = site.projects | sort: "order" %}
-    <ul class="project-list">
+    <ul class="project-list home-project-grid">
       {% for project in ordered_projects %}
       <li class="project-item">
         <h3><a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></h3>
@@ -85,9 +85,14 @@ description: Platform and reliability engineering, cloud infrastructure, and thi
       {% endfor %}
     </ul>
   </section>
-  <section>
-    <div class="section-heading"><h2>Recent writing</h2><a class="text-link" href="{{ '/writing/' | relative_url }}">All writing ↗</a></div>
-    <p class="empty-note">I publish essays and notes on Medium.</p>
-    <p class="medium-home-links"><a class="button secondary" href="https://medium.com/@faderosyad" rel="me">Visit my Medium profile <span aria-hidden="true">↗</span></a> <a class="text-link" href="https://medium.com/feed/@faderosyad">RSS feed ↗</a></p>
+  <section class="home-writing" aria-labelledby="home-writing-title">
+    <div class="section-heading">
+      <div><p class="eyebrow">Notes from the work</p><h2 id="home-writing-title">Recent writing</h2></div>
+      <a class="text-link" href="{{ '/writing/' | relative_url }}">Writing page ↗</a>
+    </div>
+    <div class="home-writing-content">
+      <p>I publish essays and notes on Medium. Browse my profile or subscribe to the RSS feed for new stories.</p>
+      <div class="medium-home-links"><a class="button secondary" href="https://medium.com/@faderosyad" rel="me">Visit my Medium profile <span aria-hidden="true">↗</span></a><a class="text-link" href="https://medium.com/feed/@faderosyad">RSS feed ↗</a></div>
+    </div>
   </section>
 </div>
