@@ -9,8 +9,7 @@ description: Platform and reliability engineering, cloud infrastructure, and thi
   <h1>Building systems that help teams <span>ship with confidence.</span></h1>
   <p class="lede">I’m Fade, a platform and reliability engineer in Indonesia. I work on cloud infrastructure, automation, and the foundations that make software dependable.</p>
   <div class="hero-actions">
-    <a class="button" href="{{ '/projects/' | relative_url }}">Explore selected work <span aria-hidden="true">↗</span></a>
-    <a class="button secondary" href="{{ '/curriculum-vitae/' | relative_url }}">View my CV</a>
+    <a class="button" href="{{ '/curriculum-vitae/' | relative_url }}">View my CV</a>
   </div>
 </section>
 <section class="career-section" aria-labelledby="career-title">
@@ -87,8 +86,7 @@ description: Platform and reliability engineering, cloud infrastructure, and thi
   </section>
   <section class="home-writing" aria-labelledby="home-writing-title">
     <div class="section-heading">
-      <div><p class="eyebrow">Notes from the work</p><h2 id="home-writing-title">Recent writing</h2></div>
-      <a class="text-link" href="{{ '/writing/' | relative_url }}">Writing page ↗</a>
+      <div><p class="eyebrow">Notes from the work</p><h2 id="home-writing-title">Writing</h2></div>
     </div>
     <div class="home-writing-content">
       <p>I publish essays and notes on Medium. Browse my profile or subscribe to the RSS feed for new stories.</p>

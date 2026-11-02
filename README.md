@@ -1,6 +1,6 @@
 # Fade Khalifah Rosyad — personal site
 
-Personal portfolio and writing site built with Jekyll. The site uses a custom layout and stylesheet, with a Jekyll collection for selected work and posts for writing.
+Personal portfolio site built with Jekyll. The site uses a custom layout and stylesheet, with a Jekyll collection for selected work.
 
 ## Local preview
 
@@ -9,13 +9,12 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Then open the local URL printed by Jekyll. Edit pages in the project root, selected work in `_projects/`, and articles in `_posts/`.
+Then open the local URL printed by Jekyll. Edit pages in the project root and selected work in `_projects/`.
 
 ## Site sections
 
 - `/` — introduction and featured work
 - `/projects/` — selected infrastructure work
-- `/writing/` — essays and notes
 - `/about/` — background and interests
 - `/curriculum-vitae/` — web CV and downloadable PDF
 - `/contact/` — email and professional links

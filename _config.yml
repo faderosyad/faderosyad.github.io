@@ -9,7 +9,6 @@ github_username: faderosyad
 linkedin_username: faderosyad
 lang: en-US
 markdown: kramdown
-permalink: /writing/:year/:month/:day/:title/
 collections:
   projects:
     output: true
