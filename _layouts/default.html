@@ -22,7 +22,7 @@
         </nav>
       </div>
     </header>
-    <main id="main" class="shell main-content">
+    <main id="main" class="shell main-content{% if page.url == '/' %} home-main{% endif %}">
       {{ content }}
     </main>
     <footer class="site-footer">
