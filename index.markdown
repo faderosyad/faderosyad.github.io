@@ -5,11 +5,18 @@ permalink: /
 description: Platform and reliability engineering, cloud infrastructure, and things I learn along the way.
 ---
 <section class="hero">
-  <p class="eyebrow">Platform engineering · Cloud infrastructure · Reliability</p>
-  <h1>Building systems that help teams <span>ship with confidence.</span></h1>
-  <p class="lede">I’m Fade, a platform and reliability engineer in Indonesia. I work on cloud infrastructure, automation, and the foundations that make software dependable.</p>
-  <div class="hero-actions">
-    <a class="button" href="{{ '/curriculum-vitae/' | relative_url }}">View my CV</a>
+  <div class="hero-layout">
+    <div class="hero-copy">
+      <p class="eyebrow">Platform engineering · Cloud infrastructure · Reliability</p>
+      <h1>Building systems that help teams <span>ship with confidence.</span></h1>
+      <p class="lede">I’m Fade, a platform and reliability engineer in Indonesia. I work on cloud infrastructure, automation, and the foundations that make software dependable.</p>
+      <div class="hero-actions">
+        <a class="button" href="{{ '/curriculum-vitae/' | relative_url }}">View my CV</a>
+      </div>
+    </div>
+    <figure class="hero-portrait">
+      <img src="{{ '/assets/images/fade-rosyad.jpg' | relative_url }}" alt="Portrait of Fade Khalifah Rosyad" width="996" height="995" fetchpriority="high">
+    </figure>
   </div>
 </section>
 <section class="career-section" aria-labelledby="career-title">
@@ -88,9 +95,12 @@ description: Platform and reliability engineering, cloud infrastructure, and thi
     <div class="section-heading">
       <div><p class="eyebrow">Notes from the work</p><h2 id="home-writing-title">Writing</h2></div>
     </div>
-    <div class="home-writing-content">
-      <p>I publish essays and notes on Medium. Browse my profile or subscribe to the RSS feed for new stories.</p>
-      <div class="medium-home-links"><a class="button secondary" href="https://medium.com/@faderosyad" rel="me">Visit my Medium profile <span aria-hidden="true">↗</span></a><a class="text-link" href="https://medium.com/feed/@faderosyad">RSS feed ↗</a></div>
+    <div class="medium-feed" data-medium-feed data-feed-url="https://medium.com/feed/@faderosyad">
+      <p class="medium-feed-status" data-feed-status role="status" aria-live="polite">Loading latest Medium stories…</p>
+      <ul class="medium-feed-grid" data-feed-posts></ul>
+      <p class="medium-feed-fallback" data-feed-fallback hidden>Stories could not be loaded here. You can still <a href="https://medium.com/@faderosyad" rel="me">visit my Medium profile</a>.</p>
     </div>
+    <div class="medium-home-links"><a class="button secondary" href="https://medium.com/@faderosyad" rel="me">Visit my Medium profile <span aria-hidden="true">↗</span></a></div>
   </section>
 </div>
+<script src="{{ '/assets/js/medium-feed.js' | relative_url }}" defer></script>
